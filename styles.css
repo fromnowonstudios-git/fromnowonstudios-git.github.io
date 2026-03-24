@@ -611,6 +611,114 @@ em {
   font-size: 0.5rem;
 }
 
+/* --- Photographer --- */
+.section-photographer {
+  padding: 120px 40px;
+  border-top: 1px solid rgba(26, 26, 26, 0.06);
+}
+
+.photog-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.photog-image {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 24px 64px rgba(26, 26, 26, 0.12);
+  position: relative;
+}
+
+.photog-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 4/5;
+  filter: saturate(0.9);
+  transition: filter 0.5s var(--ease);
+}
+
+.photog-image:hover img {
+  filter: saturate(1.1);
+}
+
+.photog-name {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+
+.photog-bio {
+  font-size: 1rem;
+  color: var(--warm-gray);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.photog-quote {
+  font-family: var(--font-italic);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--accent-dark);
+  padding-left: 20px;
+  border-left: 2px solid var(--accent-light);
+  margin-bottom: 28px;
+}
+
+.photog-links {
+  display: flex;
+  gap: 20px;
+}
+
+.photog-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--charcoal);
+  padding: 10px 24px;
+  border: 1px solid rgba(26, 26, 26, 0.15);
+  border-radius: 100px;
+  transition: all 0.3s var(--ease);
+  cursor: pointer;
+}
+
+.photog-link:hover {
+  background: var(--charcoal);
+  color: var(--cream);
+  border-color: var(--charcoal);
+}
+
+@media (max-width: 900px) {
+  .photog-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .photog-image {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .photog-quote {
+    border-left: none;
+    padding-left: 0;
+    border-top: 2px solid var(--accent-light);
+    padding-top: 16px;
+  }
+
+  .photog-links { justify-content: center; }
+
+  .section-photographer { padding: 80px 24px; }
+}
+
 /* --- Studio Status --- */
 .section-status {
   padding: 120px 40px;
