@@ -3,415 +3,323 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FromNowOn Studios — Coming Soon</title>
-  <meta name="description" content="FromNowOn Studios — A creative studio for photography, videography, and visual storytelling. Coming soon." />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="FromNowOn Studios — Coming Soon" />
-  <meta property="og:description" content="A creative studio for photography, videography, and visual storytelling." />
+  <title>FromNowOn Studios</title>
+  <meta name="description" content="FromNowOn Studios — Photography, videography, and visual storytelling. Creating without limits." />
+  <meta property="og:title" content="FromNowOn Studios" />
+  <meta property="og:description" content="Photography, videography, and visual storytelling." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://fromnowonstudios.com" />
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Archivo:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Ambient background blobs -->
-  <div class="ambient-bg" aria-hidden="true">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
-  </div>
 
-  <!-- Grain overlay -->
-  <div class="grain" aria-hidden="true"></div>
+  <!-- Cursor follower -->
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Noise overlay -->
+  <div class="noise" aria-hidden="true"></div>
 
   <!-- Navigation -->
   <nav class="nav">
-    <div class="nav-logo">
-      <svg class="logo-icon" viewBox="0 0 48 48" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="FromNowOn Studios logo">
-        <rect x="2" y="2" width="44" height="44" rx="8" stroke="currentColor" stroke-width="2.5" fill="none"/>
-        <path d="M12 14h24M12 14v20M12 24h16M12 24v10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <circle cx="34" cy="32" r="6" stroke="currentColor" stroke-width="2" fill="none"/>
-        <circle cx="34" cy="32" r="2" fill="currentColor"/>
+    <a href="#" class="nav-brand">
+      <svg viewBox="0 0 60 24" width="60" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="FNO logo">
+        <text x="0" y="19" font-family="'Syne', sans-serif" font-weight="800" font-size="20" fill="currentColor" letter-spacing="-1">FNO</text>
+        <circle cx="52" cy="12" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/>
+        <circle cx="52" cy="12" r="1" fill="currentColor"/>
       </svg>
-      <span class="logo-text">FromNowOn<span class="logo-accent">Studios</span></span>
+    </a>
+    <div class="nav-right">
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#status" class="nav-link">Status</a>
+      <a href="mailto:fromnowonstudios@gmail.com" class="nav-link nav-cta">Say Hello</a>
     </div>
-    <div class="nav-links">
-      <a href="#services" class="nav-link">Services</a>
-      <a href="#progress" class="nav-link">Progress</a>
-      <a href="#contact" class="nav-link nav-link-cta">Get in Touch</a>
-    </div>
-    <button class="mobile-menu-btn" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
+    <button class="burger" aria-label="Menu">
+      <span></span><span></span>
     </button>
   </nav>
 
-  <!-- Mobile menu -->
-  <div class="mobile-menu">
-    <a href="#services" class="mobile-link">Services</a>
-    <a href="#progress" class="mobile-link">Progress</a>
-    <a href="#contact" class="mobile-link">Get in Touch</a>
+  <!-- Mobile overlay -->
+  <div class="mobile-nav">
+    <a href="#work" class="mobile-nav-link">Work</a>
+    <a href="#status" class="mobile-nav-link">Status</a>
+    <a href="#grad" class="mobile-nav-link">Graduation 2025</a>
+    <a href="mailto:fromnowonstudios@gmail.com" class="mobile-nav-link">Say Hello</a>
   </div>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero">
-    <div class="hero-badge">
-      <span class="badge-dot"></span>
-      <span>Coming Soon — 2025</span>
+    <div class="hero-col-left">
+      <div class="hero-tag">
+        <span class="blink-dot"></span>
+        Coming Soon
+      </div>
+      <h1 class="hero-title">
+        <span class="hero-line hero-line-1">From</span>
+        <span class="hero-line hero-line-2">Now</span>
+        <span class="hero-line hero-line-3">On<span class="hero-dot">.</span></span>
+      </h1>
     </div>
-    <h1 class="hero-title">
-      <span class="line line-1">Create</span>
-      <span class="line line-2">Without</span>
-      <span class="line line-3">Limits<span class="cursor">_</span></span>
-    </h1>
-    <p class="hero-subtitle">
-      A creative studio for photography, videography, and visual storytelling.
-      We capture moments that matter — with artistry, not templates.
-    </p>
-    <div class="hero-actions">
-      <a href="#contact" class="btn btn-primary">
-        <span>Book a Session</span>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-      <a href="#services" class="btn btn-ghost">
-        <span>Explore Services</span>
-      </a>
+    <div class="hero-col-right">
+      <p class="hero-desc">
+        We don't do templates.<br/>
+        We do <em>moments</em> — raw, real, and unforgettable.
+      </p>
+      <div class="hero-meta">
+        <span class="meta-item">Philadelphia, PA</span>
+        <span class="meta-divider">/</span>
+        <span class="meta-item">Est. 2025</span>
+        <span class="meta-divider">/</span>
+        <span class="meta-item">Creative Studio</span>
+      </div>
     </div>
 
-    <!-- Scroll indicator -->
-    <div class="scroll-indicator" aria-hidden="true">
-      <div class="scroll-mouse">
-        <div class="scroll-wheel"></div>
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>PHOTOGRAPHY</span>
+        <span class="marquee-star">&#10038;</span>
+        <span>VIDEOGRAPHY</span>
+        <span class="marquee-star">&#10038;</span>
+        <span>VISUAL STORYTELLING</span>
+        <span class="marquee-star">&#10038;</span>
+        <span>CREATIVE DIRECTION</span>
+        <span class="marquee-star">&#10038;</span>
+        <span>PHOTOGRAPHY</span>
+        <span class="marquee-star">&#10038;</span>
+        <span>VIDEOGRAPHY</span>
+        <span class="marquee-star">&#10038;</span>
+        <span>VISUAL STORYTELLING</span>
+        <span class="marquee-star">&#10038;</span>
+        <span>CREATIVE DIRECTION</span>
+        <span class="marquee-star">&#10038;</span>
       </div>
-      <span>Scroll to explore</span>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section id="services" class="section services">
-    <div class="section-header">
-      <span class="section-tag">What We Do</span>
-      <h2 class="section-title">Crafted with Intention</h2>
-      <p class="section-desc">Every frame tells a story. Every project is a collaboration.</p>
+  <!-- What We Do — Scattered/Artistic -->
+  <section id="work" class="section-work">
+    <div class="work-header">
+      <span class="label-mono">[ What we create ]</span>
+      <h2 class="work-title">
+        Not services.<br/>
+        <span class="text-outline">Experiences.</span>
+      </h2>
     </div>
 
-    <div class="services-grid">
-      <div class="service-card" data-tilt>
-        <div class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="6" width="20" height="12" rx="2"/>
-            <circle cx="12" cy="12" r="3"/>
-            <path d="M2 9h2M20 9h2"/>
-          </svg>
-        </div>
-        <h3>Photography</h3>
-        <p>Graduation shoots, portraits, events — captured with a documentary eye and artistic intent.</p>
-        <div class="service-tags">
+    <div class="work-cards">
+      <div class="work-card card-photo">
+        <div class="card-number">01</div>
+        <h3 class="card-title">Photography</h3>
+        <p class="card-desc">Graduation. Portraits. Events. We chase the light and the feeling — never the pose.</p>
+        <div class="card-tags">
           <span>Graduation</span>
           <span>Portraits</span>
           <span>Events</span>
+          <span>Documentary</span>
         </div>
       </div>
 
-      <div class="service-card" data-tilt>
-        <div class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <polygon points="23 7 16 12 23 17 23 7"/>
-            <rect x="1" y="5" width="15" height="14" rx="2"/>
-          </svg>
-        </div>
-        <h3>Videography</h3>
-        <p>Music videos, short films, brand content — cinematic storytelling that moves people.</p>
-        <div class="service-tags">
+      <div class="work-card card-video">
+        <div class="card-number">02</div>
+        <h3 class="card-title">Videography</h3>
+        <p class="card-desc">Music videos. Short films. Brand stories. Cinematic work that hits different.</p>
+        <div class="card-tags">
           <span>Music Videos</span>
           <span>Short Films</span>
-          <span>Brand</span>
+          <span>Brand Content</span>
         </div>
       </div>
 
-      <div class="service-card" data-tilt>
-        <div class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-            <path d="M2 17l10 5 10-5"/>
-            <path d="M2 12l10 5 10-5"/>
-          </svg>
-        </div>
-        <h3>Creative Direction</h3>
-        <p>Brand identity, visual strategy, social media content — we make your vision cohesive.</p>
-        <div class="service-tags">
+      <div class="work-card card-creative">
+        <div class="card-number">03</div>
+        <h3 class="card-title">Creative Direction</h3>
+        <p class="card-desc">From concept to feed. We make your visual identity something people remember.</p>
+        <div class="card-tags">
           <span>Branding</span>
           <span>Social Media</span>
-          <span>Strategy</span>
+          <span>Art Direction</span>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- Graduation Section (Featured) -->
-  <section class="section grad-section">
-    <div class="grad-content">
-      <span class="section-tag">Now Booking</span>
-      <h2 class="section-title">Graduation 2025</h2>
-      <p class="grad-desc">
-        Your milestone deserves more than a quick snap. Book a professional graduation shoot —
-        timeless photos, fast turnaround, and a vibe that's all you.
-      </p>
-      <div class="grad-pricing">
-        <div class="price-card">
-          <span class="price-label">Starting at</span>
-          <span class="price-amount">$250</span>
-          <span class="price-detail">per session</span>
+  <!-- Graduation Feature -->
+  <section id="grad" class="section-grad">
+    <div class="grad-label">
+      <span class="label-mono">[ Now Booking ]</span>
+    </div>
+    <div class="grad-hero">
+      <h2 class="grad-title">
+        <span class="grad-year">2025</span>
+        Graduation<br/>Shoots
+      </h2>
+      <div class="grad-info">
+        <p class="grad-desc">
+          You worked for this. Let's make the photos match the energy.
+          Book a session — on campus, off campus, wherever feels right.
+        </p>
+        <div class="grad-price-tag">
+          <span class="price-from">from</span>
+          <span class="price-num">$250</span>
         </div>
-        <ul class="grad-features">
-          <li>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            60-minute on-location shoot
-          </li>
-          <li>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            50+ professionally edited photos
-          </li>
-          <li>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            48-hour delivery
-          </li>
-          <li>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-            Campus & off-campus locations
-          </li>
+        <ul class="grad-list">
+          <li><span class="check">+</span> 60 min on-location shoot</li>
+          <li><span class="check">+</span> 50+ edited photos</li>
+          <li><span class="check">+</span> 48-hour turnaround</li>
+          <li><span class="check">+</span> Your vibe, your locations</li>
         </ul>
+        <a href="mailto:fromnowonstudios@gmail.com?subject=Graduation%20Shoot%20Inquiry" class="btn-book">
+          Book Now
+          <span class="btn-arrow">&rarr;</span>
+        </a>
       </div>
-      <a href="#contact" class="btn btn-primary btn-lg">
-        <span>Book Your Shoot</span>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </div>
+  </section>
+
+  <!-- Studio Status — Gamified Progress -->
+  <section id="status" class="section-status">
+    <div class="status-header">
+      <span class="label-mono">[ Studio Status ]</span>
+      <h2 class="status-title">
+        Loading<span class="blink">_</span>
+      </h2>
+      <p class="status-sub">We're building in public. Here's where we're at.</p>
+    </div>
+
+    <!-- XP Bar -->
+    <div class="xp-wrapper">
+      <div class="xp-top">
+        <span class="xp-level-badge">LVL 3</span>
+        <span class="xp-label">Studio Launch XP</span>
+        <span class="xp-pct">58%</span>
+      </div>
+      <div class="xp-track">
+        <div class="xp-fill" data-width="58">
+          <div class="xp-shimmer"></div>
+        </div>
+      </div>
+      <div class="xp-stages">
+        <span class="xp-stage past">Idea</span>
+        <span class="xp-stage past">Build</span>
+        <span class="xp-stage current">Polish</span>
+        <span class="xp-stage">Launch</span>
+        <span class="xp-stage">Scale</span>
+      </div>
+    </div>
+
+    <!-- Progress Items -->
+    <div class="progress-list">
+      <div class="prog-item" data-prog="92">
+        <div class="prog-top">
+          <span class="prog-name">Brand Identity</span>
+          <span class="prog-tag tag-hot">Almost There</span>
+          <span class="prog-pct">92%</span>
+        </div>
+        <div class="prog-track"><div class="prog-fill" data-width="92"></div></div>
+        <div class="prog-steps">
+          <span class="step done">Logo</span>
+          <span class="step done">Colors</span>
+          <span class="step done">Type</span>
+          <span class="step now">Guidelines</span>
+        </div>
+      </div>
+
+      <div class="prog-item" data-prog="75">
+        <div class="prog-top">
+          <span class="prog-name">Website</span>
+          <span class="prog-tag tag-wip">In Progress</span>
+          <span class="prog-pct">75%</span>
+        </div>
+        <div class="prog-track"><div class="prog-fill" data-width="75"></div></div>
+        <div class="prog-steps">
+          <span class="step done">Design</span>
+          <span class="step done">Frontend</span>
+          <span class="step now">Backend</span>
+          <span class="step">Launch</span>
+        </div>
+      </div>
+
+      <div class="prog-item" data-prog="60">
+        <div class="prog-top">
+          <span class="prog-name">Portfolio</span>
+          <span class="prog-tag tag-wip">In Progress</span>
+          <span class="prog-pct">60%</span>
+        </div>
+        <div class="prog-track"><div class="prog-fill" data-width="60"></div></div>
+        <div class="prog-steps">
+          <span class="step done">Selection</span>
+          <span class="step done">Editing</span>
+          <span class="step now">Upload</span>
+          <span class="step">Review</span>
+        </div>
+      </div>
+
+      <div class="prog-item" data-prog="40">
+        <div class="prog-top">
+          <span class="prog-name">Socials</span>
+          <span class="prog-tag tag-early">Early</span>
+          <span class="prog-pct">40%</span>
+        </div>
+        <div class="prog-track"><div class="prog-fill" data-width="40"></div></div>
+        <div class="prog-steps">
+          <span class="step done">Accounts</span>
+          <span class="step now">Content</span>
+          <span class="step">Scheduling</span>
+          <span class="step">Ads</span>
+        </div>
+      </div>
+
+      <div class="prog-item" data-prog="25">
+        <div class="prog-top">
+          <span class="prog-name">Booking System</span>
+          <span class="prog-tag tag-early">Early</span>
+          <span class="prog-pct">25%</span>
+        </div>
+        <div class="prog-track"><div class="prog-fill" data-width="25"></div></div>
+        <div class="prog-steps">
+          <span class="step done">Research</span>
+          <span class="step now">Setup</span>
+          <span class="step">Testing</span>
+          <span class="step">Live</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section-contact">
+    <div class="contact-left">
+      <span class="label-mono">[ Let's talk ]</span>
+      <h2 class="contact-title">
+        Got an idea?<br/>
+        <span class="text-stroke">Let's shoot.</span>
+      </h2>
+    </div>
+    <div class="contact-right">
+      <a href="mailto:fromnowonstudios@gmail.com" class="contact-link">
+        <span class="contact-link-label">Email</span>
+        <span class="contact-link-value">fromnowonstudios@gmail.com</span>
+        <span class="contact-arrow">&rarr;</span>
       </a>
-    </div>
-  </section>
-
-  <!-- Progress Section (Gamified) -->
-  <section id="progress" class="section progress-section">
-    <div class="section-header">
-      <span class="section-tag">Studio Status</span>
-      <h2 class="section-title">Building Something Special</h2>
-      <p class="section-desc">Track our launch progress in real-time. Every bar is a step closer.</p>
-    </div>
-
-    <div class="progress-grid">
-      <div class="progress-card" data-progress="92">
-        <div class="progress-header">
-          <div class="progress-info">
-            <span class="progress-label">Brand Identity</span>
-            <span class="progress-badge badge-complete">Almost There</span>
-          </div>
-          <span class="progress-value">92%</span>
-        </div>
-        <div class="progress-bar-track">
-          <div class="progress-bar-fill" data-width="92"></div>
-        </div>
-        <div class="progress-milestones">
-          <span class="milestone done">Logo</span>
-          <span class="milestone done">Colors</span>
-          <span class="milestone done">Typography</span>
-          <span class="milestone active">Guidelines</span>
-        </div>
+      <a href="https://instagram.com/fromnowonstudios" target="_blank" rel="noopener noreferrer" class="contact-link">
+        <span class="contact-link-label">Instagram</span>
+        <span class="contact-link-value">@fromnowonstudios</span>
+        <span class="contact-arrow">&rarr;</span>
+      </a>
+      <div class="contact-link">
+        <span class="contact-link-label">Location</span>
+        <span class="contact-link-value">Philadelphia, PA</span>
       </div>
-
-      <div class="progress-card" data-progress="75">
-        <div class="progress-header">
-          <div class="progress-info">
-            <span class="progress-label">Website Development</span>
-            <span class="progress-badge badge-progress">In Progress</span>
-          </div>
-          <span class="progress-value">75%</span>
-        </div>
-        <div class="progress-bar-track">
-          <div class="progress-bar-fill" data-width="75"></div>
-        </div>
-        <div class="progress-milestones">
-          <span class="milestone done">Design</span>
-          <span class="milestone done">Frontend</span>
-          <span class="milestone active">Backend</span>
-          <span class="milestone">Launch</span>
-        </div>
-      </div>
-
-      <div class="progress-card" data-progress="60">
-        <div class="progress-header">
-          <div class="progress-info">
-            <span class="progress-label">Portfolio Migration</span>
-            <span class="progress-badge badge-progress">In Progress</span>
-          </div>
-          <span class="progress-value">60%</span>
-        </div>
-        <div class="progress-bar-track">
-          <div class="progress-bar-fill" data-width="60"></div>
-        </div>
-        <div class="progress-milestones">
-          <span class="milestone done">Selection</span>
-          <span class="milestone done">Editing</span>
-          <span class="milestone active">Upload</span>
-          <span class="milestone">Review</span>
-        </div>
-      </div>
-
-      <div class="progress-card" data-progress="40">
-        <div class="progress-header">
-          <div class="progress-info">
-            <span class="progress-label">Social Media Setup</span>
-            <span class="progress-badge badge-early">Early Stage</span>
-          </div>
-          <span class="progress-value">40%</span>
-        </div>
-        <div class="progress-bar-track">
-          <div class="progress-bar-fill" data-width="40"></div>
-        </div>
-        <div class="progress-milestones">
-          <span class="milestone done">Accounts</span>
-          <span class="milestone active">Content</span>
-          <span class="milestone">Scheduling</span>
-          <span class="milestone">Ads</span>
-        </div>
-      </div>
-
-      <div class="progress-card" data-progress="25">
-        <div class="progress-header">
-          <div class="progress-info">
-            <span class="progress-label">Booking System</span>
-            <span class="progress-badge badge-early">Early Stage</span>
-          </div>
-          <span class="progress-value">25%</span>
-        </div>
-        <div class="progress-bar-track">
-          <div class="progress-bar-fill" data-width="25"></div>
-        </div>
-        <div class="progress-milestones">
-          <span class="milestone done">Research</span>
-          <span class="milestone active">Setup</span>
-          <span class="milestone">Testing</span>
-          <span class="milestone">Live</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Overall XP bar -->
-    <div class="xp-section">
-      <div class="xp-header">
-        <div class="xp-level">
-          <span class="xp-badge">LVL 3</span>
-          <span class="xp-title">Studio Launch Progress</span>
-        </div>
-        <span class="xp-text">58.4% Complete</span>
-      </div>
-      <div class="xp-bar-track">
-        <div class="xp-bar-fill" data-width="58.4"></div>
-        <div class="xp-bar-glow"></div>
-      </div>
-      <div class="xp-levels">
-        <span class="xp-level-mark" style="left: 0%">LVL 1<br/><small>Idea</small></span>
-        <span class="xp-level-mark" style="left: 25%">LVL 2<br/><small>Build</small></span>
-        <span class="xp-level-mark active" style="left: 50%">LVL 3<br/><small>Polish</small></span>
-        <span class="xp-level-mark" style="left: 75%">LVL 4<br/><small>Launch</small></span>
-        <span class="xp-level-mark" style="left: 100%">LVL 5<br/><small>Scale</small></span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section contact-section">
-    <div class="section-header">
-      <span class="section-tag">Let's Connect</span>
-      <h2 class="section-title">Ready to Create?</h2>
-      <p class="section-desc">Drop us a line. We'll get back to you within 24 hours.</p>
-    </div>
-
-    <div class="contact-grid">
-      <div class="contact-methods">
-        <a href="mailto:fromnowonstudios@gmail.com" class="contact-card">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="4" width="20" height="16" rx="2"/>
-            <path d="M22 7l-10 6L2 7"/>
-          </svg>
-          <div>
-            <span class="contact-label">Email</span>
-            <span class="contact-value">fromnowonstudios@gmail.com</span>
-          </div>
-        </a>
-        <a href="https://instagram.com/fromnowonstudios" target="_blank" rel="noopener noreferrer" class="contact-card">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="2" width="20" height="20" rx="5"/>
-            <circle cx="12" cy="12" r="5"/>
-            <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
-          </svg>
-          <div>
-            <span class="contact-label">Instagram</span>
-            <span class="contact-value">@fromnowonstudios</span>
-          </div>
-        </a>
-        <a href="#" class="contact-card">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-            <circle cx="12" cy="10" r="3"/>
-          </svg>
-          <div>
-            <span class="contact-label">Location</span>
-            <span class="contact-value">Philadelphia, PA</span>
-          </div>
-        </a>
-      </div>
-
-      <form class="contact-form" id="contactForm" action="https://formspree.io/f/placeholder" method="POST">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required placeholder="Your name" />
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required placeholder="you@email.com" />
-        </div>
-        <div class="form-group">
-          <label for="service">Interested In</label>
-          <select id="service" name="service">
-            <option value="">Select a service</option>
-            <option value="graduation">Graduation Photography</option>
-            <option value="portrait">Portrait Session</option>
-            <option value="video">Videography</option>
-            <option value="creative">Creative Direction</option>
-            <option value="other">Something Else</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..."></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary btn-full">
-          <span>Send Message</span>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-        </button>
-      </form>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="footer-content">
-      <div class="footer-brand">
-        <svg class="logo-icon" viewBox="0 0 48 48" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="2" y="2" width="44" height="44" rx="8" stroke="currentColor" stroke-width="2.5" fill="none"/>
-          <path d="M12 14h24M12 14v20M12 24h16M12 24v10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="34" cy="32" r="6" stroke="currentColor" stroke-width="2" fill="none"/>
-          <circle cx="34" cy="32" r="2" fill="currentColor"/>
-        </svg>
-        <span>FromNowOn Studios</span>
-      </div>
-      <p class="footer-copy">&copy; 2025 FromNowOn Studios. All rights reserved.</p>
-    </div>
+    <span class="footer-left">&copy; 2025 FromNowOn Studios</span>
+    <span class="footer-right">Create without limits.</span>
   </footer>
 
   <script src="script.js"></script>
