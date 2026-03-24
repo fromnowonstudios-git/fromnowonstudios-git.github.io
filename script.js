@@ -1,109 +1,84 @@
 // ============================================
-// FromNowOn Studios — Creative Interactions
+// FromNowOn Studios — Smooth Interactions
 // ============================================
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // --- Custom Cursor Glow ---
-  const glow = document.querySelector('.cursor-glow');
-  if (glow && window.matchMedia('(pointer: fine)').matches) {
-    document.addEventListener('mousemove', (e) => {
-      glow.style.left = e.clientX + 'px';
-      glow.style.top = e.clientY + 'px';
-    });
-  }
-
-  // --- Burger Menu ---
+  // --- Burger ---
   const burger = document.querySelector('.burger');
-  const mobileNav = document.querySelector('.mobile-nav');
+  const mobNav = document.querySelector('.mob-nav');
 
   if (burger) {
     burger.addEventListener('click', () => {
       burger.classList.toggle('active');
-      mobileNav.classList.toggle('active');
+      mobNav.classList.toggle('active');
     });
-
-    document.querySelectorAll('.mobile-nav-link').forEach(link => {
-      link.addEventListener('click', () => {
+    mobNav.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
         burger.classList.remove('active');
-        mobileNav.classList.remove('active');
+        mobNav.classList.remove('active');
       });
     });
   }
 
   // --- Scroll Reveal ---
-  const reveals = document.querySelectorAll('.work-card, .prog-item');
+  const reveals = document.querySelectorAll('[data-reveal]');
 
-  const revealObs = new IntersectionObserver((entries) => {
+  const obs = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const el = entry.target;
-        const siblings = Array.from(el.parentElement.children);
+        const siblings = Array.from(el.parentElement.children).filter(c => c.hasAttribute('data-reveal'));
         const i = siblings.indexOf(el);
-        setTimeout(() => el.classList.add('visible'), i * 120);
-        revealObs.unobserve(el);
+        setTimeout(() => el.classList.add('visible'), i * 150);
+        obs.unobserve(el);
       }
     });
   }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-  reveals.forEach(el => revealObs.observe(el));
+  reveals.forEach(el => obs.observe(el));
 
-  // --- Animated Progress Bars ---
-  const bars = document.querySelectorAll('.prog-fill, .xp-fill');
+  // --- Progress Bars ---
+  const bars = document.querySelectorAll('.ms-fill, .journey-fill');
 
   const barObs = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        const bar = entry.target;
         setTimeout(() => {
-          bar.style.width = bar.dataset.width + '%';
+          entry.target.style.width = entry.target.dataset.width + '%';
         }, 400);
-        barObs.unobserve(bar);
+        barObs.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.3 });
+  }, { threshold: 0.2 });
 
-  bars.forEach(bar => barObs.observe(bar));
+  bars.forEach(b => barObs.observe(b));
 
-  // --- Count Up ---
-  const pcts = document.querySelectorAll('.prog-pct');
-
-  const countObs = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const el = entry.target;
-        const target = parseInt(el.textContent);
-        countUp(el, 0, target, 1200);
-        countObs.unobserve(el);
-      }
-    });
-  }, { threshold: 0.5 });
-
-  pcts.forEach(el => countObs.observe(el));
-
-  function countUp(el, start, end, duration) {
-    const t0 = performance.now();
-    function tick(now) {
-      const p = Math.min((now - t0) / duration, 1);
-      const eased = 1 - Math.pow(1 - p, 3);
-      el.textContent = Math.round(start + (end - start) * eased) + '%';
-      if (p < 1) requestAnimationFrame(tick);
-    }
-    requestAnimationFrame(tick);
-  }
-
-  // --- Smooth Anchor Scroll ---
+  // --- Smooth Anchors ---
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', (e) => {
       e.preventDefault();
-      const target = document.querySelector(a.getAttribute('href'));
-      if (target) {
+      const t = document.querySelector(a.getAttribute('href'));
+      if (t) {
         window.scrollTo({
-          top: target.getBoundingClientRect().top + window.scrollY - 60,
+          top: t.getBoundingClientRect().top + window.scrollY - 70,
           behavior: 'smooth'
         });
       }
     });
   });
+
+  // --- Parallax on hero images ---
+  const imgs = document.querySelectorAll('.hero-img');
+  if (imgs.length && window.matchMedia('(min-width: 900px)').matches) {
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      imgs.forEach((img, i) => {
+        const speed = 0.08 + i * 0.04;
+        img.style.transform = img.style.transform.replace(/translateY\([^)]*\)/, '') +
+          ` translateY(${y * speed}px)`;
+      });
+    }, { passive: true });
+  }
 
 });

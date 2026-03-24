@@ -4,322 +4,303 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FromNowOn Studios</title>
-  <meta name="description" content="FromNowOn Studios — Photography, videography, and visual storytelling. Creating without limits." />
-  <meta property="og:title" content="FromNowOn Studios" />
-  <meta property="og:description" content="Photography, videography, and visual storytelling." />
-  <meta property="og:type" content="website" />
+  <meta name="description" content="FromNowOn Studios — Photography, videography, and visual storytelling based in Philadelphia." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=General+Sans:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Cursor follower -->
-  <div class="cursor-glow" aria-hidden="true"></div>
-
-  <!-- Noise overlay -->
-  <div class="noise" aria-hidden="true"></div>
-
-  <!-- Navigation -->
+  <!-- Nav -->
   <nav class="nav">
-    <a href="#" class="nav-brand">
-      <svg viewBox="0 0 60 24" width="60" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="FNO logo">
-        <text x="0" y="19" font-family="'Syne', sans-serif" font-weight="800" font-size="20" fill="currentColor" letter-spacing="-1">FNO</text>
-        <circle cx="52" cy="12" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/>
-        <circle cx="52" cy="12" r="1" fill="currentColor"/>
-      </svg>
-    </a>
-    <div class="nav-right">
-      <a href="#work" class="nav-link">Work</a>
-      <a href="#status" class="nav-link">Status</a>
-      <a href="mailto:fromnowonstudios@gmail.com" class="nav-link nav-cta">Say Hello</a>
+    <a href="#" class="brand">FromNowOn<span>Studios</span></a>
+    <div class="nav-links">
+      <a href="#work">Our Work</a>
+      <a href="#graduation">Graduation</a>
+      <a href="#studio">Studio</a>
+      <a href="mailto:fromnowonstudios@gmail.com" class="nav-btn">Inquire</a>
     </div>
-    <button class="burger" aria-label="Menu">
-      <span></span><span></span>
-    </button>
+    <button class="burger" aria-label="Menu"><span></span><span></span></button>
   </nav>
 
-  <!-- Mobile overlay -->
-  <div class="mobile-nav">
-    <a href="#work" class="mobile-nav-link">Work</a>
-    <a href="#status" class="mobile-nav-link">Status</a>
-    <a href="#grad" class="mobile-nav-link">Graduation 2025</a>
-    <a href="mailto:fromnowonstudios@gmail.com" class="mobile-nav-link">Say Hello</a>
+  <!-- Mobile nav -->
+  <div class="mob-nav">
+    <a href="#work">Our Work</a>
+    <a href="#graduation">Graduation</a>
+    <a href="#studio">Studio</a>
+    <a href="mailto:fromnowonstudios@gmail.com">Inquire</a>
   </div>
 
   <!-- Hero -->
-  <section class="hero">
-    <div class="hero-col-left">
-      <div class="hero-tag">
-        <span class="blink-dot"></span>
-        Coming Soon
-      </div>
-      <h1 class="hero-title">
-        <span class="hero-line hero-line-1">From</span>
-        <span class="hero-line hero-line-2">Now</span>
-        <span class="hero-line hero-line-3">On<span class="hero-dot">.</span></span>
+  <header class="hero">
+    <div class="hero-text">
+      <p class="hero-above">Photography &bull; Videography &bull; Creative Direction</p>
+      <h1>
+        <span class="h-line h-line-1">We capture</span>
+        <span class="h-line h-line-2"><em>moments</em> that</span>
+        <span class="h-line h-line-3">stay with you.</span>
       </h1>
-    </div>
-    <div class="hero-col-right">
-      <p class="hero-desc">
-        We don't do templates.<br/>
-        We do <em>moments</em> — raw, real, and unforgettable.
-      </p>
-      <div class="hero-meta">
-        <span class="meta-item">Philadelphia, PA</span>
-        <span class="meta-divider">/</span>
-        <span class="meta-item">Est. 2025</span>
-        <span class="meta-divider">/</span>
-        <span class="meta-item">Creative Studio</span>
+      <p class="hero-sub">A creative studio based in Philadelphia — telling stories through light, motion, and intention.</p>
+      <div class="hero-ctas">
+        <a href="#graduation" class="btn-fill">Book a Session</a>
+        <a href="#work" class="btn-line">See Our Work</a>
       </div>
     </div>
 
-    <!-- Marquee -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span>PHOTOGRAPHY</span>
-        <span class="marquee-star">&#10038;</span>
-        <span>VIDEOGRAPHY</span>
-        <span class="marquee-star">&#10038;</span>
-        <span>VISUAL STORYTELLING</span>
-        <span class="marquee-star">&#10038;</span>
-        <span>CREATIVE DIRECTION</span>
-        <span class="marquee-star">&#10038;</span>
-        <span>PHOTOGRAPHY</span>
-        <span class="marquee-star">&#10038;</span>
-        <span>VIDEOGRAPHY</span>
-        <span class="marquee-star">&#10038;</span>
-        <span>VISUAL STORYTELLING</span>
-        <span class="marquee-star">&#10038;</span>
-        <span>CREATIVE DIRECTION</span>
-        <span class="marquee-star">&#10038;</span>
+    <!-- Decorative photo placeholders -->
+    <div class="hero-gallery" aria-hidden="true">
+      <div class="hero-img img-1">
+        <div class="img-placeholder">
+          <div class="ph-grain"></div>
+          <span class="ph-label">Portrait</span>
+        </div>
+      </div>
+      <div class="hero-img img-2">
+        <div class="img-placeholder warm">
+          <div class="ph-grain"></div>
+          <span class="ph-label">Graduation</span>
+        </div>
+      </div>
+      <div class="hero-img img-3">
+        <div class="img-placeholder cool">
+          <div class="ph-grain"></div>
+          <span class="ph-label">Creative</span>
+        </div>
       </div>
     </div>
-  </section>
+  </header>
 
-  <!-- What We Do — Scattered/Artistic -->
+  <!-- Marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-inner">
+      <span>Timeless</span><span class="dot">&bull;</span>
+      <span>Intentional</span><span class="dot">&bull;</span>
+      <span>Authentic</span><span class="dot">&bull;</span>
+      <span>Creative</span><span class="dot">&bull;</span>
+      <span>Cinematic</span><span class="dot">&bull;</span>
+      <span>Timeless</span><span class="dot">&bull;</span>
+      <span>Intentional</span><span class="dot">&bull;</span>
+      <span>Authentic</span><span class="dot">&bull;</span>
+      <span>Creative</span><span class="dot">&bull;</span>
+      <span>Cinematic</span><span class="dot">&bull;</span>
+    </div>
+  </div>
+
+  <!-- Services / Work -->
   <section id="work" class="section-work">
-    <div class="work-header">
-      <span class="label-mono">[ What we create ]</span>
-      <h2 class="work-title">
-        Not services.<br/>
-        <span class="text-outline">Experiences.</span>
-      </h2>
-    </div>
+    <div class="sec-label">What We Create</div>
+    <h2 class="sec-heading">Every frame <em>tells</em><br/>a story.</h2>
 
-    <div class="work-cards">
-      <div class="work-card card-photo">
-        <div class="card-number">01</div>
-        <h3 class="card-title">Photography</h3>
-        <p class="card-desc">Graduation. Portraits. Events. We chase the light and the feeling — never the pose.</p>
-        <div class="card-tags">
-          <span>Graduation</span>
-          <span>Portraits</span>
-          <span>Events</span>
-          <span>Documentary</span>
+    <div class="offerings">
+      <article class="offering" data-reveal>
+        <div class="offer-img">
+          <div class="img-placeholder warm-soft"><div class="ph-grain"></div></div>
         </div>
-      </div>
+        <div class="offer-body">
+          <h3>Photography</h3>
+          <p>Graduation shoots, portraits, events, lifestyle — captured with soul, not just a camera.</p>
+          <div class="offer-tags">
+            <span>Graduation</span><span>Portraits</span><span>Events</span><span>Lifestyle</span>
+          </div>
+        </div>
+      </article>
 
-      <div class="work-card card-video">
-        <div class="card-number">02</div>
-        <h3 class="card-title">Videography</h3>
-        <p class="card-desc">Music videos. Short films. Brand stories. Cinematic work that hits different.</p>
-        <div class="card-tags">
-          <span>Music Videos</span>
-          <span>Short Films</span>
-          <span>Brand Content</span>
+      <article class="offering reverse" data-reveal>
+        <div class="offer-img">
+          <div class="img-placeholder cool-soft"><div class="ph-grain"></div></div>
         </div>
-      </div>
+        <div class="offer-body">
+          <h3>Videography</h3>
+          <p>Music videos, short films, brand films — cinematic storytelling that moves people.</p>
+          <div class="offer-tags">
+            <span>Music Videos</span><span>Short Films</span><span>Brand</span>
+          </div>
+        </div>
+      </article>
 
-      <div class="work-card card-creative">
-        <div class="card-number">03</div>
-        <h3 class="card-title">Creative Direction</h3>
-        <p class="card-desc">From concept to feed. We make your visual identity something people remember.</p>
-        <div class="card-tags">
-          <span>Branding</span>
-          <span>Social Media</span>
-          <span>Art Direction</span>
+      <article class="offering" data-reveal>
+        <div class="offer-img">
+          <div class="img-placeholder earth-soft"><div class="ph-grain"></div></div>
         </div>
-      </div>
+        <div class="offer-body">
+          <h3>Creative Direction</h3>
+          <p>Visual identity, social media, content strategy — we make your brand feel like you.</p>
+          <div class="offer-tags">
+            <span>Branding</span><span>Social Media</span><span>Art Direction</span>
+          </div>
+        </div>
+      </article>
     </div>
   </section>
 
   <!-- Graduation Feature -->
-  <section id="grad" class="section-grad">
-    <div class="grad-label">
-      <span class="label-mono">[ Now Booking ]</span>
+  <section id="graduation" class="section-grad">
+    <div class="grad-bg-shapes" aria-hidden="true">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
     </div>
-    <div class="grad-hero">
-      <h2 class="grad-title">
-        <span class="grad-year">2025</span>
-        Graduation<br/>Shoots
-      </h2>
-      <div class="grad-info">
-        <p class="grad-desc">
-          You worked for this. Let's make the photos match the energy.
-          Book a session — on campus, off campus, wherever feels right.
-        </p>
-        <div class="grad-price-tag">
-          <span class="price-from">from</span>
-          <span class="price-num">$250</span>
+    <div class="grad-inner">
+      <div class="sec-label light">Now Booking</div>
+      <h2 class="grad-heading">Graduation<br/><em>2025</em></h2>
+      <p class="grad-tagline">You earned this moment. Let's make it unforgettable.</p>
+
+      <div class="grad-details">
+        <div class="grad-price">
+          <span class="price-small">starting at</span>
+          <span class="price-big">$250</span>
+          <span class="price-small">per session</span>
         </div>
-        <ul class="grad-list">
-          <li><span class="check">+</span> 60 min on-location shoot</li>
-          <li><span class="check">+</span> 50+ edited photos</li>
-          <li><span class="check">+</span> 48-hour turnaround</li>
-          <li><span class="check">+</span> Your vibe, your locations</li>
-        </ul>
-        <a href="mailto:fromnowonstudios@gmail.com?subject=Graduation%20Shoot%20Inquiry" class="btn-book">
-          Book Now
-          <span class="btn-arrow">&rarr;</span>
-        </a>
+
+        <div class="grad-perks">
+          <div class="perk">
+            <span class="perk-icon">&#9679;</span>
+            <span>60-minute on-location shoot</span>
+          </div>
+          <div class="perk">
+            <span class="perk-icon">&#9679;</span>
+            <span>50+ professionally edited photos</span>
+          </div>
+          <div class="perk">
+            <span class="perk-icon">&#9679;</span>
+            <span>48-hour delivery</span>
+          </div>
+          <div class="perk">
+            <span class="perk-icon">&#9679;</span>
+            <span>Campus & off-campus locations</span>
+          </div>
+        </div>
       </div>
+
+      <a href="mailto:fromnowonstudios@gmail.com?subject=Graduation%20Shoot%20Inquiry" class="btn-fill light">Book Your Session &rarr;</a>
     </div>
   </section>
 
-  <!-- Studio Status — Gamified Progress -->
-  <section id="status" class="section-status">
-    <div class="status-header">
-      <span class="label-mono">[ Studio Status ]</span>
-      <h2 class="status-title">
-        Loading<span class="blink">_</span>
-      </h2>
-      <p class="status-sub">We're building in public. Here's where we're at.</p>
-    </div>
+  <!-- Studio Status / Progress — Styled as creative milestone tracker -->
+  <section id="studio" class="section-status">
+    <div class="sec-label">Studio Journal</div>
+    <h2 class="sec-heading">Where we are <em>right now.</em></h2>
+    <p class="status-intro">We're building something beautiful. Follow along as we bring FromNowOn Studios to life.</p>
 
-    <!-- XP Bar -->
-    <div class="xp-wrapper">
-      <div class="xp-top">
-        <span class="xp-level-badge">LVL 3</span>
-        <span class="xp-label">Studio Launch XP</span>
-        <span class="xp-pct">58%</span>
+    <!-- Overall progress — styled as a creative "journey" -->
+    <div class="journey-bar">
+      <div class="journey-top">
+        <span class="journey-label">Launch Journey</span>
+        <span class="journey-pct">58%</span>
       </div>
-      <div class="xp-track">
-        <div class="xp-fill" data-width="58">
-          <div class="xp-shimmer"></div>
-        </div>
+      <div class="journey-track">
+        <div class="journey-fill" data-width="58"></div>
       </div>
-      <div class="xp-stages">
-        <span class="xp-stage past">Idea</span>
-        <span class="xp-stage past">Build</span>
-        <span class="xp-stage current">Polish</span>
-        <span class="xp-stage">Launch</span>
-        <span class="xp-stage">Scale</span>
+      <div class="journey-stops">
+        <span class="stop passed">Dream</span>
+        <span class="stop passed">Create</span>
+        <span class="stop active">Refine</span>
+        <span class="stop">Launch</span>
+        <span class="stop">Grow</span>
       </div>
     </div>
 
-    <!-- Progress Items -->
-    <div class="progress-list">
-      <div class="prog-item" data-prog="92">
-        <div class="prog-top">
-          <span class="prog-name">Brand Identity</span>
-          <span class="prog-tag tag-hot">Almost There</span>
-          <span class="prog-pct">92%</span>
+    <!-- Milestone cards -->
+    <div class="milestones">
+      <div class="milestone-card" data-reveal data-prog="92">
+        <div class="ms-top">
+          <h4>Brand Identity</h4>
+          <span class="ms-badge badge-warm">Almost There</span>
         </div>
-        <div class="prog-track"><div class="prog-fill" data-width="92"></div></div>
-        <div class="prog-steps">
-          <span class="step done">Logo</span>
-          <span class="step done">Colors</span>
-          <span class="step done">Type</span>
-          <span class="step now">Guidelines</span>
-        </div>
-      </div>
-
-      <div class="prog-item" data-prog="75">
-        <div class="prog-top">
-          <span class="prog-name">Website</span>
-          <span class="prog-tag tag-wip">In Progress</span>
-          <span class="prog-pct">75%</span>
-        </div>
-        <div class="prog-track"><div class="prog-fill" data-width="75"></div></div>
-        <div class="prog-steps">
-          <span class="step done">Design</span>
-          <span class="step done">Frontend</span>
-          <span class="step now">Backend</span>
-          <span class="step">Launch</span>
+        <div class="ms-bar"><div class="ms-fill" data-width="92"></div></div>
+        <div class="ms-steps">
+          <span class="ms-step done">Logo</span>
+          <span class="ms-step done">Colors</span>
+          <span class="ms-step done">Typography</span>
+          <span class="ms-step current">Guidelines</span>
         </div>
       </div>
 
-      <div class="prog-item" data-prog="60">
-        <div class="prog-top">
-          <span class="prog-name">Portfolio</span>
-          <span class="prog-tag tag-wip">In Progress</span>
-          <span class="prog-pct">60%</span>
+      <div class="milestone-card" data-reveal data-prog="75">
+        <div class="ms-top">
+          <h4>Website</h4>
+          <span class="ms-badge badge-cool">In Progress</span>
         </div>
-        <div class="prog-track"><div class="prog-fill" data-width="60"></div></div>
-        <div class="prog-steps">
-          <span class="step done">Selection</span>
-          <span class="step done">Editing</span>
-          <span class="step now">Upload</span>
-          <span class="step">Review</span>
-        </div>
-      </div>
-
-      <div class="prog-item" data-prog="40">
-        <div class="prog-top">
-          <span class="prog-name">Socials</span>
-          <span class="prog-tag tag-early">Early</span>
-          <span class="prog-pct">40%</span>
-        </div>
-        <div class="prog-track"><div class="prog-fill" data-width="40"></div></div>
-        <div class="prog-steps">
-          <span class="step done">Accounts</span>
-          <span class="step now">Content</span>
-          <span class="step">Scheduling</span>
-          <span class="step">Ads</span>
+        <div class="ms-bar"><div class="ms-fill" data-width="75"></div></div>
+        <div class="ms-steps">
+          <span class="ms-step done">Design</span>
+          <span class="ms-step done">Frontend</span>
+          <span class="ms-step current">Backend</span>
+          <span class="ms-step">Launch</span>
         </div>
       </div>
 
-      <div class="prog-item" data-prog="25">
-        <div class="prog-top">
-          <span class="prog-name">Booking System</span>
-          <span class="prog-tag tag-early">Early</span>
-          <span class="prog-pct">25%</span>
+      <div class="milestone-card" data-reveal data-prog="60">
+        <div class="ms-top">
+          <h4>Portfolio</h4>
+          <span class="ms-badge badge-cool">In Progress</span>
         </div>
-        <div class="prog-track"><div class="prog-fill" data-width="25"></div></div>
-        <div class="prog-steps">
-          <span class="step done">Research</span>
-          <span class="step now">Setup</span>
-          <span class="step">Testing</span>
-          <span class="step">Live</span>
+        <div class="ms-bar"><div class="ms-fill" data-width="60"></div></div>
+        <div class="ms-steps">
+          <span class="ms-step done">Selection</span>
+          <span class="ms-step done">Editing</span>
+          <span class="ms-step current">Upload</span>
+          <span class="ms-step">Review</span>
+        </div>
+      </div>
+
+      <div class="milestone-card" data-reveal data-prog="40">
+        <div class="ms-top">
+          <h4>Socials</h4>
+          <span class="ms-badge badge-earth">Early Stage</span>
+        </div>
+        <div class="ms-bar"><div class="ms-fill" data-width="40"></div></div>
+        <div class="ms-steps">
+          <span class="ms-step done">Accounts</span>
+          <span class="ms-step current">Content</span>
+          <span class="ms-step">Scheduling</span>
+          <span class="ms-step">Ads</span>
+        </div>
+      </div>
+
+      <div class="milestone-card" data-reveal data-prog="25">
+        <div class="ms-top">
+          <h4>Booking System</h4>
+          <span class="ms-badge badge-earth">Early Stage</span>
+        </div>
+        <div class="ms-bar"><div class="ms-fill" data-width="25"></div></div>
+        <div class="ms-steps">
+          <span class="ms-step done">Research</span>
+          <span class="ms-step current">Setup</span>
+          <span class="ms-step">Testing</span>
+          <span class="ms-step">Live</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="section-contact">
-    <div class="contact-left">
-      <span class="label-mono">[ Let's talk ]</span>
-      <h2 class="contact-title">
-        Got an idea?<br/>
-        <span class="text-stroke">Let's shoot.</span>
-      </h2>
-    </div>
-    <div class="contact-right">
-      <a href="mailto:fromnowonstudios@gmail.com" class="contact-link">
-        <span class="contact-link-label">Email</span>
-        <span class="contact-link-value">fromnowonstudios@gmail.com</span>
-        <span class="contact-arrow">&rarr;</span>
-      </a>
-      <a href="https://instagram.com/fromnowonstudios" target="_blank" rel="noopener noreferrer" class="contact-link">
-        <span class="contact-link-label">Instagram</span>
-        <span class="contact-link-value">@fromnowonstudios</span>
-        <span class="contact-arrow">&rarr;</span>
-      </a>
-      <div class="contact-link">
-        <span class="contact-link-label">Location</span>
-        <span class="contact-link-value">Philadelphia, PA</span>
+  <section class="section-contact">
+    <div class="contact-inner">
+      <div class="sec-label">Get in Touch</div>
+      <h2 class="contact-heading">Let's create<br/><em>something together.</em></h2>
+      <div class="contact-ways">
+        <a href="mailto:fromnowonstudios@gmail.com" class="cw">
+          <span class="cw-type">Email</span>
+          <span class="cw-val">fromnowonstudios@gmail.com</span>
+        </a>
+        <a href="https://instagram.com/fromnowonstudios" target="_blank" rel="noopener noreferrer" class="cw">
+          <span class="cw-type">Instagram</span>
+          <span class="cw-val">@fromnowonstudios</span>
+        </a>
+        <div class="cw">
+          <span class="cw-type">Based in</span>
+          <span class="cw-val">Philadelphia, PA</span>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <span class="footer-left">&copy; 2025 FromNowOn Studios</span>
-    <span class="footer-right">Create without limits.</span>
+    <span>&copy; 2025 FromNowOn Studios</span>
+    <span>Made with intention.</span>
   </footer>
 
   <script src="script.js"></script>
