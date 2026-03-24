@@ -18,6 +18,7 @@
     <a href="#" class="brand">FromNowOn<span>Studios</span></a>
     <div class="nav-links">
       <a href="#work">Our Work</a>
+      <a href="#weddings">Weddings</a>
       <a href="#graduation">Graduation</a>
       <a href="#studio">Studio</a>
       <a href="mailto:fromnowonstudios@gmail.com" class="nav-btn">Inquire</a>
@@ -28,15 +29,20 @@
   <!-- Mobile nav -->
   <div class="mob-nav">
     <a href="#work">Our Work</a>
+    <a href="#weddings">Weddings</a>
     <a href="#graduation">Graduation</a>
     <a href="#studio">Studio</a>
     <a href="mailto:fromnowonstudios@gmail.com">Inquire</a>
   </div>
 
-  <!-- Hero -->
+  <!-- Hero — Roshan front and center -->
   <header class="hero">
-    <div class="hero-text">
-      <p class="hero-above">Photography &bull; Videography &bull; Visual Storytelling</p>
+    <div class="hero-image">
+      <img src="assets/Roshan.jpg" alt="Roshan Philip — Photographer at FromNowOn Studios" />
+      <div class="hero-image-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-above">Photography &bull; Videography &bull; Weddings</p>
       <h1>
         <span class="h-line h-line-1">We capture</span>
         <span class="h-line h-line-2"><em>moments</em> that</span>
@@ -44,29 +50,15 @@
       </h1>
       <p class="hero-sub">A creative studio based in Philadelphia — capturing both the individual and the space they're a part of. Timeless. Intentional. Real.</p>
       <div class="hero-ctas">
-        <a href="#graduation" class="btn-fill">Book a Session</a>
+        <a href="mailto:fromnowonstudios@gmail.com?subject=Session%20Inquiry" class="btn-fill">Book a Session</a>
         <a href="#work" class="btn-line">See Our Work</a>
       </div>
-    </div>
-
-    <!-- Decorative photo placeholders -->
-    <div class="hero-gallery" aria-hidden="true">
-      <div class="hero-img img-1">
-        <div class="img-placeholder">
-          <div class="ph-grain"></div>
-          <span class="ph-label">Portrait</span>
-        </div>
-      </div>
-      <div class="hero-img img-2">
-        <div class="img-placeholder warm">
-          <div class="ph-grain"></div>
-          <span class="ph-label">Graduation</span>
-        </div>
-      </div>
-      <div class="hero-img img-3">
-        <div class="img-placeholder cool">
-          <div class="ph-grain"></div>
-          <span class="ph-label">Creative</span>
+      <div class="hero-photographer">
+        <span class="photog-label">Behind the lens</span>
+        <span class="photog-name-small">Roshan Philip</span>
+        <div class="photog-socials">
+          <a href="https://www.instagram.com/roshanphilip.projects/" target="_blank" rel="noopener noreferrer">Portfolio</a>
+          <a href="https://roshanphilip.squarespace.com/" target="_blank" rel="noopener noreferrer">Website</a>
         </div>
       </div>
     </div>
@@ -77,90 +69,88 @@
     <div class="marquee-inner">
       <span>Timeless</span><span class="dot">&bull;</span>
       <span>Intentional</span><span class="dot">&bull;</span>
-      <span>Authentic</span><span class="dot">&bull;</span>
-      <span>Creative</span><span class="dot">&bull;</span>
+      <span>Weddings</span><span class="dot">&bull;</span>
+      <span>Graduation</span><span class="dot">&bull;</span>
+      <span>Portraits</span><span class="dot">&bull;</span>
+      <span>Music Videos</span><span class="dot">&bull;</span>
       <span>Cinematic</span><span class="dot">&bull;</span>
       <span>Timeless</span><span class="dot">&bull;</span>
       <span>Intentional</span><span class="dot">&bull;</span>
-      <span>Authentic</span><span class="dot">&bull;</span>
-      <span>Creative</span><span class="dot">&bull;</span>
+      <span>Weddings</span><span class="dot">&bull;</span>
+      <span>Graduation</span><span class="dot">&bull;</span>
+      <span>Portraits</span><span class="dot">&bull;</span>
+      <span>Music Videos</span><span class="dot">&bull;</span>
       <span>Cinematic</span><span class="dot">&bull;</span>
     </div>
   </div>
 
-  <!-- Meet the Photographer -->
-  <section class="section-photographer">
-    <div class="photog-inner">
-      <div class="photog-image">
-        <img src="assets/Roshan.jpg" alt="Roshan Philip — Photographer and Creative Director at FromNowOn Studios" />
-      </div>
-      <div class="photog-text">
-        <div class="sec-label">Behind the Lens</div>
-        <h2 class="photog-name">Roshan <em>Philip</em></h2>
-        <p class="photog-bio">
-          Photographer, videographer, and creative director based in Philadelphia —
-          serving clients across New York, Boston, Chicago, Detroit, Atlanta, and Miami.
-          Roshan's approach is rooted in photojournalism: capturing both the individual
-          and the space they're a part of. From wedding days to graduation walks, music videos
-          to golden hour portraits — the work is always timeless, intentional, and real.
-        </p>
-        <p class="photog-quote">"I capture the individual and the space that person is a part of."</p>
-        <div class="photog-links">
-          <a href="https://www.instagram.com/roshanphilip.projects/" target="_blank" rel="noopener noreferrer" class="photog-link">
-            Creative Portfolio &rarr;
-          </a>
-          <a href="https://roshanphilip.squarespace.com/" target="_blank" rel="noopener noreferrer" class="photog-link">
-            Full Website &rarr;
-          </a>
-        </div>
-      </div>
+  <!-- Services / Work — compact cards, no empty images -->
+  <section id="work" class="section-work">
+    <div class="sec-label">What We Create</div>
+    <h2 class="sec-heading">Every frame <em>tells</em> a story.</h2>
+
+    <div class="work-grid">
+      <a href="#weddings" class="work-item" data-reveal>
+        <span class="work-num">01</span>
+        <h3>Photography</h3>
+        <p>Weddings, graduations, engagements, portraits — documentary-style. No stiff poses, just real moments.</p>
+        <span class="work-arrow">&rarr;</span>
+      </a>
+      <a href="#weddings" class="work-item" data-reveal>
+        <span class="work-num">02</span>
+        <h3>Videography</h3>
+        <p>Wedding films, music videos, short films — cinematic storytelling with a documentary soul.</p>
+        <span class="work-arrow">&rarr;</span>
+      </a>
+      <a href="mailto:fromnowonstudios@gmail.com" class="work-item" data-reveal>
+        <span class="work-num">03</span>
+        <h3>Engagements</h3>
+        <p>Pre-wedding shoots, proposals, couple sessions — capturing the excitement before the big day.</p>
+        <span class="work-arrow">&rarr;</span>
+      </a>
+      <a href="#graduation" class="work-item" data-reveal>
+        <span class="work-num">04</span>
+        <h3>Portraits</h3>
+        <p>Creative portraits, lifestyle sessions, headshots — in-studio or on-location, your vibe, your way.</p>
+        <span class="work-arrow">&rarr;</span>
+      </a>
     </div>
   </section>
 
-  <!-- Services / Work -->
-  <section id="work" class="section-work">
-    <div class="sec-label">What We Create</div>
-    <h2 class="sec-heading">Every frame <em>tells</em><br/>a story.</h2>
+  <!-- Weddings & Engagements -->
+  <section id="weddings" class="section-weddings">
+    <div class="wed-inner">
+      <div class="sec-label light">Now Booking</div>
+      <h2 class="wed-heading">Weddings &<br/><em>Engagements</em></h2>
+      <p class="wed-sub">Your love story, told through timeless, documentary-style photography and cinematic films. We capture every moment — from the getting-ready nerves to the last dance.</p>
 
-    <div class="offerings">
-      <article class="offering" data-reveal>
-        <div class="offer-img">
-          <div class="img-placeholder warm-soft"><div class="ph-grain"></div></div>
+      <div class="wed-services">
+        <div class="wed-card">
+          <h4>Wedding Photography</h4>
+          <p>Full-day documentary coverage, personalized planning, high-resolution files. Free travel up to 1 hour from Philadelphia.</p>
+          <span class="wed-cta">Inquire for pricing</span>
         </div>
-        <div class="offer-body">
-          <h3>Photography</h3>
-          <p>Weddings, graduations, engagements, portraits — we capture you and the space you're a part of. Documentary-style, no stiff poses, just real moments.</p>
-          <div class="offer-tags">
-            <span>Weddings</span><span>Graduation</span><span>Engagements</span><span>Portraits</span><span>Lifestyle</span>
-          </div>
+        <div class="wed-card">
+          <h4>Wedding Videography</h4>
+          <p>Cinematic wedding films that feel like a movie. Documentary approach — real moments, real emotions, real you.</p>
+          <span class="wed-cta">Inquire for pricing</span>
         </div>
-      </article>
+        <div class="wed-card">
+          <h4>Engagement Sessions</h4>
+          <p>Complimentary with wedding packages or bookable separately. Unlimited outfit changes, your favorite locations.</p>
+          <span class="wed-cta">Inquire for pricing</span>
+        </div>
+      </div>
 
-      <article class="offering reverse" data-reveal>
-        <div class="offer-img">
-          <div class="img-placeholder cool-soft"><div class="ph-grain"></div></div>
-        </div>
-        <div class="offer-body">
-          <h3>Videography</h3>
-          <p>Wedding films, music videos, short films — cinematic storytelling with a documentary soul. We make visuals that hit different.</p>
-          <div class="offer-tags">
-            <span>Wedding Films</span><span>Music Videos</span><span>Short Films</span><span>Creative Edits</span>
-          </div>
-        </div>
-      </article>
-
+      <a href="mailto:fromnowonstudios@gmail.com?subject=Wedding%20Inquiry" class="btn-fill light">Get in Touch &rarr;</a>
     </div>
   </section>
 
   <!-- Graduation Feature -->
   <section id="graduation" class="section-grad">
-    <div class="grad-bg-shapes" aria-hidden="true">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-    </div>
     <div class="grad-inner">
-      <div class="sec-label light">Now Booking</div>
-      <h2 class="grad-heading">Graduation<br/><em>2025</em></h2>
+      <div class="sec-label">Now Booking</div>
+      <h2 class="grad-heading">Graduation <em>2025</em></h2>
       <p class="grad-tagline">You earned this moment. Let's make it unforgettable.</p>
 
       <div class="grad-details">
@@ -169,46 +159,50 @@
           <span class="price-big">$250</span>
           <span class="price-small">per session</span>
         </div>
-
         <div class="grad-perks">
-          <div class="perk">
-            <span class="perk-icon">&#9679;</span>
-            <span>60-minute on-location shoot</span>
-          </div>
-          <div class="perk">
-            <span class="perk-icon">&#9679;</span>
-            <span>50+ professionally edited photos</span>
-          </div>
-          <div class="perk">
-            <span class="perk-icon">&#9679;</span>
-            <span>48-hour delivery</span>
-          </div>
-          <div class="perk">
-            <span class="perk-icon">&#9679;</span>
-            <span>Campus & off-campus locations</span>
-          </div>
+          <div class="perk"><span class="perk-icon">&bull;</span><span>60-minute on-location shoot</span></div>
+          <div class="perk"><span class="perk-icon">&bull;</span><span>50+ professionally edited photos</span></div>
+          <div class="perk"><span class="perk-icon">&bull;</span><span>48-hour delivery</span></div>
+          <div class="perk"><span class="perk-icon">&bull;</span><span>Campus & off-campus locations</span></div>
         </div>
       </div>
 
-      <a href="mailto:fromnowonstudios@gmail.com?subject=Graduation%20Shoot%20Inquiry" class="btn-fill light">Book Your Session &rarr;</a>
+      <a href="mailto:fromnowonstudios@gmail.com?subject=Graduation%20Shoot%20Inquiry" class="btn-fill">Book Your Session &rarr;</a>
     </div>
   </section>
 
-  <!-- Studio Status / Progress — Styled as creative milestone tracker -->
+  <!-- About the Photographer -->
+  <section class="section-about">
+    <div class="about-inner">
+      <div class="sec-label">Behind the Lens</div>
+      <h2 class="sec-heading">Meet <em>Roshan Philip</em></h2>
+      <p class="about-bio">
+        Photographer, videographer, and creative director based in Philadelphia —
+        serving clients across New York, Boston, Chicago, Detroit, Atlanta, and Miami.
+        His approach is rooted in photojournalism: capturing both the individual
+        and the space they're a part of. From wedding days to graduation walks, music videos
+        to golden hour portraits — the work is always timeless, intentional, and real.
+      </p>
+      <p class="about-quote">"I capture the individual and the space that person is a part of."</p>
+      <div class="about-links">
+        <a href="https://www.instagram.com/roshanphilip.projects/" target="_blank" rel="noopener noreferrer" class="btn-line">Creative Portfolio &rarr;</a>
+        <a href="https://roshanphilip.squarespace.com/" target="_blank" rel="noopener noreferrer" class="btn-line">Full Website &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Studio Status -->
   <section id="studio" class="section-status">
     <div class="sec-label">Studio Journal</div>
     <h2 class="sec-heading">Where we are <em>right now.</em></h2>
-    <p class="status-intro">We're building something beautiful. Follow along as we bring FromNowOn Studios to life.</p>
 
-    <!-- Overall progress — styled as a creative "journey" -->
+    <!-- XP Journey -->
     <div class="journey-bar">
       <div class="journey-top">
         <span class="journey-label">Launch Journey</span>
         <span class="journey-pct">58%</span>
       </div>
-      <div class="journey-track">
-        <div class="journey-fill" data-width="58"></div>
-      </div>
+      <div class="journey-track"><div class="journey-fill" data-width="58"></div></div>
       <div class="journey-stops">
         <span class="stop passed">Dream</span>
         <span class="stop passed">Create</span>
@@ -218,75 +212,40 @@
       </div>
     </div>
 
-    <!-- Milestone cards -->
     <div class="milestones">
-      <div class="milestone-card" data-reveal data-prog="92">
-        <div class="ms-top">
-          <h4>Brand Identity</h4>
-          <span class="ms-badge badge-warm">Almost There</span>
-        </div>
+      <div class="milestone-card" data-reveal>
+        <div class="ms-top"><h4>Brand Identity</h4><span class="ms-badge badge-warm">92%</span></div>
         <div class="ms-bar"><div class="ms-fill" data-width="92"></div></div>
         <div class="ms-steps">
-          <span class="ms-step done">Logo</span>
-          <span class="ms-step done">Colors</span>
-          <span class="ms-step done">Typography</span>
-          <span class="ms-step current">Guidelines</span>
+          <span class="ms-step done">Logo</span><span class="ms-step done">Colors</span><span class="ms-step done">Type</span><span class="ms-step current">Guidelines</span>
         </div>
       </div>
-
-      <div class="milestone-card" data-reveal data-prog="75">
-        <div class="ms-top">
-          <h4>Website</h4>
-          <span class="ms-badge badge-cool">In Progress</span>
-        </div>
+      <div class="milestone-card" data-reveal>
+        <div class="ms-top"><h4>Website</h4><span class="ms-badge badge-cool">75%</span></div>
         <div class="ms-bar"><div class="ms-fill" data-width="75"></div></div>
         <div class="ms-steps">
-          <span class="ms-step done">Design</span>
-          <span class="ms-step done">Frontend</span>
-          <span class="ms-step current">Backend</span>
-          <span class="ms-step">Launch</span>
+          <span class="ms-step done">Design</span><span class="ms-step done">Frontend</span><span class="ms-step current">Backend</span><span class="ms-step">Launch</span>
         </div>
       </div>
-
-      <div class="milestone-card" data-reveal data-prog="60">
-        <div class="ms-top">
-          <h4>Portfolio</h4>
-          <span class="ms-badge badge-cool">In Progress</span>
-        </div>
+      <div class="milestone-card" data-reveal>
+        <div class="ms-top"><h4>Portfolio</h4><span class="ms-badge badge-cool">60%</span></div>
         <div class="ms-bar"><div class="ms-fill" data-width="60"></div></div>
         <div class="ms-steps">
-          <span class="ms-step done">Selection</span>
-          <span class="ms-step done">Editing</span>
-          <span class="ms-step current">Upload</span>
-          <span class="ms-step">Review</span>
+          <span class="ms-step done">Selection</span><span class="ms-step done">Editing</span><span class="ms-step current">Upload</span><span class="ms-step">Review</span>
         </div>
       </div>
-
-      <div class="milestone-card" data-reveal data-prog="40">
-        <div class="ms-top">
-          <h4>Socials</h4>
-          <span class="ms-badge badge-earth">Early Stage</span>
-        </div>
+      <div class="milestone-card" data-reveal>
+        <div class="ms-top"><h4>Socials</h4><span class="ms-badge badge-earth">40%</span></div>
         <div class="ms-bar"><div class="ms-fill" data-width="40"></div></div>
         <div class="ms-steps">
-          <span class="ms-step done">Accounts</span>
-          <span class="ms-step current">Content</span>
-          <span class="ms-step">Scheduling</span>
-          <span class="ms-step">Ads</span>
+          <span class="ms-step done">Accounts</span><span class="ms-step current">Content</span><span class="ms-step">Scheduling</span><span class="ms-step">Ads</span>
         </div>
       </div>
-
-      <div class="milestone-card" data-reveal data-prog="25">
-        <div class="ms-top">
-          <h4>Booking System</h4>
-          <span class="ms-badge badge-earth">Early Stage</span>
-        </div>
+      <div class="milestone-card" data-reveal>
+        <div class="ms-top"><h4>Booking System</h4><span class="ms-badge badge-earth">25%</span></div>
         <div class="ms-bar"><div class="ms-fill" data-width="25"></div></div>
         <div class="ms-steps">
-          <span class="ms-step done">Research</span>
-          <span class="ms-step current">Setup</span>
-          <span class="ms-step">Testing</span>
-          <span class="ms-step">Live</span>
+          <span class="ms-step done">Research</span><span class="ms-step current">Setup</span><span class="ms-step">Testing</span><span class="ms-step">Live</span>
         </div>
       </div>
     </div>
@@ -308,13 +267,12 @@
         </a>
         <div class="cw">
           <span class="cw-type">Based in</span>
-          <span class="cw-val">Philadelphia, PA</span>
+          <span class="cw-val">Philadelphia & East Coast</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <span>&copy; 2025 FromNowOn Studios</span>
     <span>Made with intention.</span>
